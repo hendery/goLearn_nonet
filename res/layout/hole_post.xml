@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  
+  <EditText
+  android:id = "@+id/content"
+  style = "@style/wrap_fill_style"
+  android:text="大一要军训了，可以在食堂吃饭了以后！"><!--  --></EditText>
+    
+  <Button 
+  android:id= "@+id/submit"
+  style="@style/golearn_wrap_style"
+  android:text = "提交"/>
+  
+  <Button
+  android:id = "@+id/gohole"
+  style = "@style/golearn_wrap_style"
+  android:text = "去树洞"><!--  --></Button>
+  </LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  style="@style/golearn_fill_style" >
+
+     <LinearLayout 
+    style="@style/golearn_fill_style"
+    android:layout_marginTop="10dp"
+    android:layout_weight="1" >
+   <RelativeLayout 
+   android:id="@+id/lay01"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent">
+   <WebView 
+   android:id="@+id/commonwebview"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+  />
+   <ProgressBar 
+   android:id="@+id/commonprogress"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_centerInParent="true"
+   android:indeterminateDrawable="@drawable/progress_bar_indeterminte"
+    style="?android:attr/progressBarStyle"/>
+   </RelativeLayout>
+
+    </LinearLayout>
+   
+</LinearLayout>

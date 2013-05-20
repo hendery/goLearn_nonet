@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background = "@drawable/activity_bg"
+    >
+    
+<include layout="@layout/header_layout" />
+
+ <TableLayout
+ android:layout_width = "fill_parent"
+ android:layout_height = "wrap_content"
+ android:layout_below="@+id/title"
+ android:layout_marginTop="60dp"
+ android:stretchColumns="0"  >
+ 
+ <TableRow
+ android:gravity="center"
+ android:layout_width = "fill_parent">
+ 
+ <Spinner
+android:id = "@+id/sn_builder"
+android:layout_width = "fill_parent"
+android:layout_height = "wrap_content"
+android:background = "@drawable/spinner_bg"
+android:padding = "13dp" >
+</Spinner> <!-- 楼选项 -->
+
+<Spinner 
+android:id = "@+id/sn_week"
+android:layout_width = "fill_parent" 
+android:layout_height = "wrap_content"
+android:background = "@drawable/spinner_bg2"
+android:padding = "13dp"
+
+/> <!-- 周选项 -->
+ </TableRow>
+ 
+ <TableRow
+ android:gravity="center">
+ <Spinner 
+android:id = "@+id/sn_day"
+android:layout_width = "fill_parent" 
+android:layout_height = "wrap_content"
+android:background = "@drawable/spinner_bg"
+android:padding = "13dp"
+/> <!-- 星期几选项 -->
+
+<Spinner 
+android:id = "@+id/sn_class"
+android:layout_width = "fill_parent"
+android:layout_height = "wrap_content"
+android:textStyle = "bold"
+android:typeface = "serif"
+android:background = "@drawable/spinner_bg2"
+android:padding = "13dp"
+/>
+ </TableRow>
+
+<TableRow 
+android:gravity="center">
+<Button 
+android:id = "@+id/submit"
+android:layout_width = "wrap_content"
+android:layout_height = "wrap_content"
+android:background="@drawable/submit_bg"
+android:textSize = "20sp"
+android:textColor = "#000000"
+android:text = "查询"/>
+</TableRow>
+
+ </TableLayout>
+
+<!-- <Button 
+android:id = "@+id/shudong"
+style = "@style/golearn_wrap_style"
+android:text = "树洞"/> -->
+ <SlidingDrawer
+        android:id="@+id/drawer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:handle="@+id/handle"
+        android:content="@+id/content"
+        android:clickable="false"
+        android:animateOnClick = "true"
+        android:bottomOffset="11dp"
+        android:topOffset="150dp"
+        >
+        <ImageView
+            android:id="@id/handle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:src="@drawable/handle" />
+        <LinearLayout
+            android:id="@id/content"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/drawer_bg">
+            <TextView
+                android:id = "@+id/tvcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:padding="18dp"
+                android:textSize = "20sp"
+                android:typeface="serif"
+                android:text="快找教室自习吧！" />
+        </LinearLayout>
+    </SlidingDrawer>
+</RelativeLayout>
